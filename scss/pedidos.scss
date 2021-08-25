@@ -1,0 +1,72 @@
+
+
+@mixin botonComun{
+    padding: 8px 16px;
+    color: white;
+    border-style: none;
+    border-radius: 12px;
+}
+
+@mixin botonAccion($relleno, $borde){
+    background-color: $relleno;
+    border-color:$borde;
+}
+
+
+/* Estilo de la pagina de pedidos */
+section{
+    margin: 1rem 0;
+}
+#pedidosNombre{
+    text-align: center;
+}
+#pedidosResumen p{
+    @extend #pedidosNombre
+}
+ #pedidosDireccion{
+    @extend #pedidosNombre
+ }
+ 
+#pedidosNombre input, .datosDomicilio input{
+     border: none;
+     background-color: rgba(0,0,0,0);
+     border-bottom: solid 1px rgba(0,0,0,0.5);
+} 
+
+#pedidosResumen table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.resumenPedidos input {
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+}
+
+.datosDomicilio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+    .aceptar{
+       @include botonComun();
+       @include botonAccion($success, $successBorder);
+        &:hover{
+            background-color:$successBorder;
+        }
+    }
+    .cancelar{
+        @include botonComun();
+        @include botonAccion($danger, $dangerBorder);
+        &:hover{
+            background-color:$dangerBorder;
+        }
+        
+    }
+
+}

@@ -1,0 +1,38 @@
+
+.contenedorFotos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    img{
+        padding: 12px;
+        box-sizing: border-box;
+        width: $w100;
+        height: auto;
+        align-content: center;
+    }
+    .first{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .last{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+#mandarFoto{
+    padding: 0 2rem;
+    ul{
+        list-style: none;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: $successBorder;
+    }
+    img{
+        width: 20px;
+    }
+}

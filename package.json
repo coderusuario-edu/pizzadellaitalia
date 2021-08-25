@@ -1,0 +1,28 @@
+{
+  "name": "entregaProyectoFinal",
+  "version": "1.0.0",
+  "description": "Entrega parcial 4 del proyecto final del curso de desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderusuario-edu/terceraEntrega.git"
+  },
+  "author": "Eduardo G Nieva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderusuario-edu/terceraEntrega/issues"
+  },
+  "homepage": "https://github.com/coderusuario-edu/terceraEntrega#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  }
+}

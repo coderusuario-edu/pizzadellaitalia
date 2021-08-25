@@ -1,0 +1,47 @@
+.card{
+    background-color: $secondary;
+}
+.card-body {
+    // Enable `flex-grow: 1` for decks and groups so that card blocks take up
+    // as much space as possible, ensuring footers are aligned to the bottom.
+    flex: 1 1 auto;
+    padding: $card-spacer-y $card-spacer-x;
+    color: $card-color;
+    background-color: $secondary;
+  }
+  
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "danger":     $danger
+) ;
+
+
+@mixin img-fluid {
+    // Part 1: Set a maximum relative to the parent
+    max-width: 100%;
+    // Part 2: Override the height to auto, otherwise images will be stretched
+    // when setting a width and height attribute on the img element.
+    height: 100%;
+  }
+  
+  @mixin reset-text {
+    font-family: $fontFamily;
+    // We deliberately do NOT reset font-size or overflow-wrap / word-wrap.
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-base;
+    text-align: left; // Fallback for where `start` is not supported
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+  }
+  

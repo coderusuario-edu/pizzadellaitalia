@@ -1,0 +1,231 @@
+
+.container{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+h1{
+    color: rgba(255,255,255,1);
+}
+h2{
+    color: $primary;
+    font-size: $fontMedium;
+    text-align: center;
+}
+h3{
+    color: $primary;
+    font-size: $fontSmall;
+    text-align: center;
+    margin-top: 1rem;
+}
+p{
+    font-size: $fontSmall - 0.25rem;
+}
+img{
+    width: $w100;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.titulo{
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    z-index: 100;
+}
+
+/* estilos de seccion pedidas */
+
+#pedidas{
+    margin-top: 10px;
+}
+
+.pizza-pedida{
+    // background-color: $secondary;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: $borderRadius;
+    text-align: center;
+    
+     &__imagen{
+        padding: $pX;
+        width: $w100;
+        height: 200px;
+        box-sizing: border-box;
+    }
+    &__texto{
+        margin-bottom: 1rem;
+    }
+    &__boton{
+        text-decoration: none;
+        color: white;
+        background-color: $primary;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:  $fontSmall - 0.25rem;
+        border-radius: $borderRadius;
+    }
+}
+
+
+/* Estilos de la seccion secretos */
+#secret img{
+    height: 200px;
+}
+
+/* Estilos de la seccion contacto */
+#contact ul{
+    list-style-type: none;
+}
+/* Estilos de seccion testimonio */
+#testimonio{
+    text-align: center;
+}
+#testimonio h3{
+    text-align: start;
+}
+
+/* Estilos de pagina estilos */
+
+.opcionesFavoritos, .opcionesTradicionales{
+    margin: $mAll;
+    list-style: none;
+}
+.opcionesFavoritos img, .opcionesTradicionales img{
+    width: $w50;
+}
+
+.opcionesFavoritos li, .opcionesTradicionales li{
+    font-size:  $fontMedium;
+    font-weight: 600;
+    display: block;
+}
+
+.opcionesFavoritos h3, .opcionesTradicionales h3{
+    text-align: center;
+    padding: $pY;
+}
+.pizza__texto{
+    padding: $pAll;
+    display: flex;
+    flex-direction: column;
+    
+    p{
+        font-weight: normal;
+    }
+}
+
+.pizza__ingredientes li{    
+    font-size: $fontSmall;
+    font-weight: normal;
+}
+.row:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+
+/* Estilo para tablet */
+@media only screen and (min-width:  767px){
+
+    .titulo{
+        font-size: $fontBig;
+    }
+    section h2{
+        text-align: center;
+    }
+    .pizzaPedida{
+        display: grid;
+        text-align: center;
+        grid-template-columns: 2fr 1fr; 
+        grid-template-areas: "ti ti" "im des";
+        h3{
+            grid-area: ti;
+        }
+        img{
+            grid-area: im;
+        }
+        p{
+            grid-area: des;
+        }
+    }
+    #secret{
+        position: relative;
+        p{
+            color: rgba(255,255,255,1);
+            position: absolute;
+            bottom: 20px;
+            padding: $pAll;
+            font-size: $fontSmall;
+        }
+        img{
+            height: auto;
+        }
+    }
+}
+
+/* Estilos para desktop */
+@media only screen and (min-width:  992px){
+    
+    h2{
+        font-size: $fontBig - 0.25rem;
+    }
+    h3{
+        font-size: $fontMedium - 0.25rem;
+    }
+    p{
+        font-size: $fontSmall - 0.25rem;
+    }
+    a{
+        font-size: $fontSmall - 0.25rem;
+    }
+    .titulo{
+        font-size: $fontBig;
+    }
+    .variedades{
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:  "pi1 pi2 pi3";
+    }
+    .pizzaPedida{
+        display: block;
+    }
+    .textoBoton{
+        padding: $pX;
+    }
+
+
+    @for $i from 1 through 3{
+        .pizzaPedida:nth-child( #{$i} ){
+            grid-area: pi#{$i};
+        }
+    }
+
+    //Va un for aquí!!
+    // .pizzaPedida:nth-child(1){
+    //     grid-area: pi1;
+    // }
+    // .pizzaPedida:nth-child(2){
+    //     grid-area: pi2;
+    // }
+    // .pizzaPedida:nth-child(3){
+    //     grid-area: pi3;
+    // }
+    //hasta aquí
+
+    #secret p{
+        bottom: 120px;
+        padding: 1rem;
+        font-size: $fontMedium;
+    }
+}

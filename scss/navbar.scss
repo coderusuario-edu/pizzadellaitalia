@@ -1,0 +1,59 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/food.png);
+    font-family: $fontFamily
+}
+header{
+    height: 100px;
+    background-color: $bg-primary;
+    text-align: center;
+    h1{
+        color: $whiteTransp;
+    }
+    a img{
+        margin: auto auto;
+        width: 4rem;
+    }
+}
+
+nav{
+    background-color: $bg-primary;
+    text-align: center;
+    padding: $pY;
+    li a{
+        list-style: none;
+        text-decoration: none;
+        font-size: 12px;
+        color: $whiteTransp;
+    }
+    ul li{
+        color: $whiteTransp;
+        display: inline;
+        margin-top: 10px;
+        padding: $pX;
+        border-right: 2px solid $whiteTransp;
+        background: linear-gradient($whiteTransp, $whiteTransp);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        &:hover{
+            background-size: 100% 2px;
+        }
+        &:focus {
+            background-size: 100% 2px;
+        }
+    }
+}
+
+button.navbar-toggler{
+    background-color: $secondary;
+}
+
+nav-item.dropdown{
+    border-right: 0px;
+}

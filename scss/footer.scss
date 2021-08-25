@@ -1,0 +1,32 @@
+
+footer{
+    background-color: $bg-primary;
+    text-align: center;
+    p{
+        color: $whiteTransp;
+    }
+}
+
+.footer-lista__item{
+    border-right: none;
+    &:hover a{
+        color: $whiteTransp;
+    }
+}
+
+.social-container{
+    margin-top: 0.5rem;
+    
+    &__item{
+        border: 1px solid $whiteTransp;
+        border-radius: 50%;
+        padding: $pAll - 0.25rem;
+        display: grid;
+        align-content: center;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+
+    }
+}

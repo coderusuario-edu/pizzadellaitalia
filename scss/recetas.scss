@@ -1,0 +1,30 @@
+
+/* Estilos página Receta */
+#masa{
+    padding: $pX;
+    margin: 3rem 0;
+    p{
+        padding: 0 3rem;
+        margin-bottom: 1rem;
+    }
+    h3{
+    text-align: center;
+    }
+}
+
+@if $lang != italiano{
+        .italiano{
+            font-style: $fontItalic;
+        }
+    }
+
+.tablaCantidades ul{
+    text-align: center;
+    list-style: none;
+}
+div.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
