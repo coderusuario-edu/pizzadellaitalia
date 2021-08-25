@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza della Italia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pedidos</h1>
+        <a href="index.html">
+            <img src="img/logo.svg" alt="logo de Pizza della Italia">
+        </a>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="estilos.html">Estilos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="pedidos.html">Pedidos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="recetas.html">Recetas</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Testimonio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="testimonio.html#restaurant">Restaurant</a></li>
+                            <li><a class="dropdown-item" href="testimonio.html#hogar">Hogar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form action="order.php" method="POST">
+        <section id="pedidosNombre">
+            <h2>Dinos como te llamaremos</h2>
+            <label for="nombre">Escribe tu nombre</label><br>
+            <input type="text" name="nombre" id="nombre">
+        </section>
+        <section id="pedidosResumen">
+            <h2>¿Con cuál pizza te vas a deleitar?</h2>
+            <p>Elige cuantas pizzas quieres, no te olvides del tamaño</p>
+            <table class="resumenPedidos table table-responsive">
+                <th scope="col">Cantidad</th>
+                <th scope="col">Estilo</th>
+                <th scope="col"  data-bs-toggle="tooltip" data-bs-placement="top" title="Que no te digan que el tamaño no importa">Tamaño</th>
+                <tr>
+                    <td><input type="number" value="0" name="margherita" id="margherita"></td>
+                    <td>Pizza Margherita</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="prosciutto" id="prosciutto"></td>
+                    <td>Pizza Prosciutto</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="calzone" id="calzone"></td>
+                    <td>Pizza Calzone</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="stagioni" id="stagioni"></td>
+                    <td>Pizza Quattro stagioni</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="hawaiana" id="hawaiana"></td>
+                    <td>Pizza Hawaiana</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="diavola" id="diavola"></td>
+                    <td>Pizza Diávola</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="funghi" id="funghi"></td>
+                    <td>Pizza Funghi</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="caprichosa" id="caprichosa"></td>
+                    <td>Pizza Caprichosa</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="vegetariana" id="vegetariana"></td>
+                    <td>Pizza Vegetariana</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="barbacoa" id="barbacoa"></td>
+                    <td>Pizza Barbacoa</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="carbonara" id="carbonara"></td>
+                    <td>Pizza Carbonara</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="0" name="formaggi" id="formaggi"></td>
+                    <td>Pizza Quattro Formaggi</td>
+                    <td>
+                        <select name="tamaño" id="">
+                            <option value="vacio">0 porciones</option>
+                            <option value="chica">4 porciones</option>
+                            <option value="mediana">6 porciones</option>
+                            <option value="grande">8 porciones</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="pedidosDireccion">
+            <h2>¿Dónde la vas a deleitar?</h2>
+            <div class="datosDomicilio">
+                <label for="direccion">Escribe la dirección</label>
+                <input type="text" name="direccion" id="direccion">
+            </div>
+            <div>
+                <input type="checkbox" name="protocolo" id="protocolo">
+                <label for="protocolo">Envio sin contacto</label>
+            </div>
+        </section>
+        <section>
+            <div class="botones">
+                <input type="reset" class="cancelar" value="Cancelar mi pedido">
+                <input type="submit" class="aceptar" value="Confirmar mi pedido">
+            </div>
+        </section>
+    </form>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="estilos.html">Estilos</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="testimonio.html">Testimonio</a></li>
+            </ul>
+        </nav>
+        <div class="row d-flex justify-content-center">
+            <div class="col-6 d-flex justify-content-around">
+                <p class="me-5"><i class="fab fa-facebook-f"></i></p>
+                <p class="me-5"><i class="fab fa-twitter"></i></p>
+                <p class="me-5"><i class="fab fa-instagram"></i></p>
+                <p class="me-5"><i class="fab fa-whatsapp"></i></p>
+                <p><i class="fab fa-telegram"></i></p>
+            </div>
+        </div>
+        <p>Pizza della Italia® - 2021</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
