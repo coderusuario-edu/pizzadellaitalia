@@ -48,7 +48,6 @@ img{
 }
 
 .pizza-pedida{
-    // background-color: $secondary;
     margin: 5px;
     padding: 5px;
     border: 1px solid black;
@@ -177,16 +176,16 @@ img{
 @media only screen and (min-width:  992px){
     
     h2{
-        font-size: $fontBig - 0.25rem;
+        font-size: $fontBig;
     }
     h3{
-        font-size: $fontMedium - 0.25rem;
+        font-size: $fontMedium;
     }
     p{
-        font-size: $fontSmall - 0.25rem;
+        font-size: $fontSmall;
     }
     a{
-        font-size: $fontSmall - 0.25rem;
+        font-size: $fontSmall;
     }
     .titulo{
         font-size: $fontBig;
@@ -210,18 +209,6 @@ img{
             grid-area: pi#{$i};
         }
     }
-
-    //Va un for aquí!!
-    // .pizzaPedida:nth-child(1){
-    //     grid-area: pi1;
-    // }
-    // .pizzaPedida:nth-child(2){
-    //     grid-area: pi2;
-    // }
-    // .pizzaPedida:nth-child(3){
-    //     grid-area: pi3;
-    // }
-    //hasta aquí
 
     #secret p{
         bottom: 120px;

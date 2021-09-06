@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza della Italia</title>
+    <meta name="author" content="Edu Nieva">
+    <meta name="description" content="Un cliente nuevo, es un nuevo amigo y te mostramos fotos que se tomaron en el restaurant como en sus hogares">
+    <meta name="keywords" content="fotos, clientes felices, sonrisas, pizza en casa, pizza en el salón, pizza y cerveza">
+    <title>Clientes felices</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -49,24 +52,146 @@
 
         <h2>Desde el restaurant</h2>
         <div class="contenedorFotos">
-            <img data-aos="zoom-in" data-aos-duration="3000" class="first" src="img/testimonio/amigos-restaurant.jpg" alt="Clientes comiendo pizza, cada uno se pidió su propia pizza">
-            <img data-aos="zoom-in" data-aos-duration="3000" src="img/testimonio/cliente-pizza.jpeg" alt="cliente mimandose el alma comiendo en el restaurant">
-            <img data-aos="zoom-in" data-aos-duration="3000" src="img/testimonio/amigos-pizza-quatroformagi.jpeg" alt="Grupo de amigos comiendo pizza quatro formagi">
-            <img data-aos="zoom-in" data-aos-duration="3000" class="last" src="img/testimonio/selfie-time.jpg" alt="Selfie con amigos en el restaurant, con una pizza mergherita">
-            <img data-aos="zoom-in" data-aos-duration="3000" src="img/testimonio/diavola-amigos.jpg" alt="Una pizza diávola para cinco">
-            <img data-aos="zoom-in" data-aos-duration="3000" src="img/testimonio/selfie-amigos.jpg" alt="Selfie con amigos, un amigo pícaro quiere comerse la pizza de la amiga">
-        
+            <img data-aos="zoom-in" data-aos-duration="2000" class="first" src="img/testimonio/amigos-restaurant.jpg" alt="Clientes comiendo pizza, cada uno se pidió su propia pizza" data-bs-toggle="modal" data-bs-target="#img1">
+            <img data-aos="zoom-in" data-aos-duration="2000" src="img/testimonio/mujer_pizza.png" alt="cliente mimandose el alma comiendo pizza en el restaurant" data-bs-toggle="modal" data-bs-target="#img2">
+            <img data-aos="zoom-in" data-aos-duration="2000" src="img/testimonio/amigos-pizza-quatroformagi.jpeg" alt="Grupo de amigos comiendo pizza quatro formagi" data-bs-toggle="modal" data-bs-target="#img3">
+            <img data-aos="zoom-in" data-aos-duration="2000" class="last" src="img/testimonio/selfie-time.jpg" alt="Selfie con amigos en el restaurant, con una pizza mergherita" data-bs-toggle="modal" data-bs-target="#img4">
+            <img data-aos="zoom-in" data-aos-duration="2000" src="img/testimonio/diavola-amigos.jpg" alt="Una pizza diávola para cinco" data-bs-toggle="modal" data-bs-target="#img5">
+            <img data-aos="zoom-in" data-aos-duration="2000" src="img/testimonio/selfie-amigos.jpg" alt="Selfie con amigos, un amigo pícaro quiere comerse la pizza de la amiga" data-bs-toggle="modal" data-bs-target="#img6">
         </div>
     </section>
     <section id="hogar">
         <h2>Desde el calor de tu hogar</h2>
         <div class="contenedorFotos">
-            <img data-aos="zoom-in" data-aos-duration="3000" class="first" src="img/testimonio/amigos-pizza.jpg" alt="Amigos comiendo pizza en su casa">
-            <img data-aos="zoom-in" data-aos-duration="3000" src="img/testimonio/pizza-hogar.jpg" alt="dos mujeres y un varon comen pizza en su casa">
-            <img data-aos="zoom-in" data-aos-duration="3000" src="img/testimonio/amigos-hogar.jpg" alt="Un grupo de amigos comiendo pizza diavola">
-            <img data-aos="zoom-in" data-aos-duration="3000" src="img/testimonio/festejo-recibida.jpg" alt="Amigos festejando muy felices comiendo pizza">
+            <img data-aos="zoom-in" data-aos-duration="2000" class="first" src="img/testimonio/amigos-pizza.jpg" alt="Amigos comiendo pizza en su casa" data-bs-toggle="modal" data-bs-target="#img7">
+            <img data-aos="zoom-in" data-aos-duration="2000" src="img/testimonio/pizza-hogar.jpg" alt="dos mujeres y un varon comen pizza en su casa" data-bs-toggle="modal" data-bs-target="#img8">
+            <img data-aos="zoom-in" data-aos-duration="2000" src="img/testimonio/amigos-hogar.jpg" alt="Un grupo de amigos comiendo pizza diavola" data-bs-toggle="modal" data-bs-target="#img9">
+            <img data-aos="zoom-in" data-aos-duration="2000" src="img/testimonio/festejo-recibida.jpg" alt="Amigos festejando muy felices comiendo pizza" data-bs-toggle="modal" data-bs-target="#img10">
         </div>
     </section>
+    <!--Inicio Modals-->
+    <div class="modal fade" id="img1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img src="img/testimonio/amigos-restaurant.jpg" alt="Clientes comiendo pizza, cada uno se pidió su propia pizza">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="img2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="img/testimonio/mujer_pizza.png" alt="cliente mimandose el alma comiendo pizza en el restaurant">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img rc="img/testimonio/amigos-pizza-quatroformagi.jpeg" alt="Grupo de amigos comiendo pizza quatro formagi">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="img4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="img/testimonio/selfie-time.jpg" alt="Selfie con amigos en el restaurant, con una pizza mergherita">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="img5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <img src="img/testimonio/diavola-amigos.jpg" alt="Una pizza diávola para cinco">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="img6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <img src="img/testimonio/selfie-amigos.jpg" alt="Selfie con amigos, un amigo pícaro quiere comerse la pizza de la amiga">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="img7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img src="img/testimonio/amigos-pizza.jpg" alt="Amigos comiendo pizza en su casa">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="img8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <img src="img/testimonio/pizza-hogar.jpg" alt="dos mujeres y un varon comen pizza en su casa">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="img9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <img src="img/testimonio/amigos-hogar.jpg" alt="Un grupo de amigos comiendo pizza diavola" >
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="img10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <img src="img/testimonio/festejo-recibida.jpg" alt="Amigos festejando muy felices comiendo pizza">
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+    <!--Fin Modals-->
+
     <section id="mandarFoto">
 
         <h2>Mandá tu foto a nuestro mail o Whatsapp</h2>

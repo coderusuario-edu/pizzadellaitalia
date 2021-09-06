@@ -1,7 +1,7 @@
 {
   "name": "entregaProyectoFinal",
   "version": "1.0.0",
-  "description": "Entrega parcial 4 del proyecto final del curso de desarrollo web",
+  "description": "Entrega del proyecto final del curso de desarrollo web",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

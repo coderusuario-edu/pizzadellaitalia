@@ -5,7 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza della Italia</title>
+    <meta name="author" content="Edu Nieva">
+    <meta name="description" content="El formulario de contacto evita que gasten comisiones innecesarias a aplicaciones">
+    <meta name="keywords" content="Pizza, pedidos, delivery, entrega sin contacto">
+    <title>Formulario de pedidos de pizza</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -53,7 +56,7 @@
             <label for="nombre">Escribe tu nombre</label><br>
             <input type="text" name="nombre" id="nombre">
         </section>
-        <section id="pedidosResumen">
+        <section id="pedidosResumen" data-aos="fade-up" data-aos-duration="1000">
             <h2>¿Con cuál pizza te vas a deleitar?</h2>
             <p>Elige cuantas pizzas quieres, no te olvides del tamaño</p>
             <table class="resumenPedidos table table-responsive">
@@ -206,7 +209,7 @@
                 </tr>
             </table>
         </section>
-        <section id="pedidosDireccion">
+        <section id="pedidosDireccion" data-aos="fade-up" data-aos-duration="1000">
             <h2>¿Dónde la vas a deleitar?</h2>
             <div class="datosDomicilio">
                 <label for="direccion">Escribe la dirección</label>
@@ -217,7 +220,7 @@
                 <label for="protocolo">Envio sin contacto</label>
             </div>
         </section>
-        <section>
+        <section data-aos="fade-up" data-aos-duration="1000">
             <div class="botones">
                 <input type="reset" class="cancelar" value="Cancelar mi pedido">
                 <input type="submit" class="aceptar" value="Confirmar mi pedido">
